@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_contact: 2014-05-28 14:17:19
+  follower_id: 
+  followed_user_id: 
+
+two:
+  last_contact: 2014-05-28 14:17:19
+  follower_id: 
+  followed_user_id: 
