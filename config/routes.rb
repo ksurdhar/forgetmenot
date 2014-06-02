@@ -1,6 +1,10 @@
 Forgetmenot::Application.routes.draw do
-  root to: "sessions#new"
+  root to: "site#root"
 
-  resources :users, only: [:new, :create]
-  resource :session, only: [:new, :create, :destroy]
+  namespace :api, :defaults => { :format => :json } do
+    resource :session, only: [:new, :create, :destroy]
+    resources :users, only: [:index, :show, :new, :create]
+    resources :relationships, only: [:create, :index, :update, :destroy]
+  end
+
 end

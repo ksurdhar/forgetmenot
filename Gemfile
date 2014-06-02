@@ -15,6 +15,7 @@ gem 'bulk_data_methods'
 gem 'pace-rails'
 gem 'thin'
 gem 'json'
+gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
@@ -28,5 +29,3 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.1.2'
