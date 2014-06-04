@@ -11,12 +11,12 @@
   <% if signed_in? %>
     <ul>
       <li>Signed in as: <%= current_user.username %></li>
-      <li><%= button_to "Sign Out", session_url, :method => :delete %></li>
+      <li><%= button_to "Sign Out", api_session_url, :method => :delete %></li>
     </ul>
     <% else %>
     <p>
-      <%= link_to "Sign In", new_session_url %> or
-      <%= link_to "Sign up", new_user_url %>
+      <%= link_to "Sign In", new_api_session_url %> or
+      <%= link_to "Sign up", new_api_user_url %>
     </p>
     <% end %>
 
