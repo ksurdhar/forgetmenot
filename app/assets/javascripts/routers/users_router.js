@@ -6,7 +6,6 @@ Forgetmenot.Routers.Users = Backbone.Router.extend({
 
   routes: {
     "": "greetView",
-    "users/new": "userNew",
     "users/id": "userShow"
   },
 
@@ -15,10 +14,6 @@ Forgetmenot.Routers.Users = Backbone.Router.extend({
     this._swapView(view);
   },
 
-  userNew: function(){
-    var view = new Forgetmenot.Views.userNew();
-    this._swapView(view);
-  },
 
   userShow: function(id){
     var view = new Forgetmenot.Views.userShow(id);

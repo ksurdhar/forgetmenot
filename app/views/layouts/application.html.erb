@@ -18,18 +18,21 @@
       <%= link_to "Sign In", new_api_session_url %> or
       <%= link_to "Sign up", new_api_user_url %>
     </p>
-    <% end %>
+  <% end %>
 
-    <hr>
+  <hr>
 
-    <% if flash[:errors] %>
+  <% if flash[:errors] %>
     <h3>Please fix the following errors:</h3>
     <ul>
       <% flash[:errors].each do |error| %>
       <li><%= error %></li>
       <% end %>
     </ul>
-    <% end %>
+  <% end %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
 <%= yield %>
 

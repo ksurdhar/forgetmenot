@@ -1,1 +1,6 @@
-rewrite render messages
+SIGN UP / SIGN IN WORKING
+
+add user create methods in views
+render / redirect a different view after 
+
+after a reminder triggers send an email to myself
